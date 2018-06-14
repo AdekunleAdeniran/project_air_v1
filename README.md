@@ -4,9 +4,6 @@
 ## Holberton School Airbnb Clone - Command Interpreter Project Description
 ### This is the first of a multipart project working towards building a full web application clone of AirBnb. In this first part, the Python programming language is used to build a command interpreter for the clone's web app. This command interpreter is similar to a BASH shell but it is designed for a specific use case. The following projects will incorporate additional sections like HTML/CSS templating, database storage, API and front-end integration.
 
-
-![Image of Map for AirBnB_clone project](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJIMMWEC6CH2PXSCQ%2F20180614%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180614T164516Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e3593ec6850f4d72fd66e6decdd3c84bf0726d8ec0209db1d66b85b2862c823a)
-
 ## How to start the interpreter
 ### In the command line run `./console.py` or `echo help | ./console.py`
 
