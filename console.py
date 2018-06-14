@@ -26,6 +26,9 @@ class HBNBCommand(cmd.Cmd):
     group = {'BaseModel', 'User', 'State', 'City',
              'Amenity', 'Place', 'Review'}
     file_path = storage._FileStorage__file_path
+    err_list = ["** class name missing **", "** class doesn't exist **",
+                    "** instance id missing **", "** no instance found **",
+                    "** attribute name missing **", "** value missing **"]
 
     def err_msg(self, n):
         """Function to return error messages"""
@@ -44,9 +47,9 @@ class HBNBCommand(cmd.Cmd):
         """Used to create a new instance of BaseModel and saves
         the instance to a JSON file"""
         if arg == "":
-            self.err_msg(1)
+            print(self.err_list[0])
         elif arg not in self.group:
-            self.err_msg(2)
+            print(self.err_list[1])
         else:
             arg = eval(arg)()
             arg.save()
@@ -56,11 +59,11 @@ class HBNBCommand(cmd.Cmd):
         """Function to print string representation of instance"""
         arg = line.split()
         if line == "":
-            self.err_msg(1)
+            print(self.err_list[0])
         elif arg[0] not in self.group:
-            self.err_msg(2)
+            print(self.err_list[1])
         elif len(arg) < 2:
-            self.err_msg(3)
+            print(self.err_list[2])
         else:
             data_dump = models.storage.all()
             key = "{}.{}".format(arg[0], arg[1])
@@ -68,17 +71,17 @@ class HBNBCommand(cmd.Cmd):
                 obj = data_dump[key]
                 print(obj)
             except KeyError:
-                self.err_msg(4)
+                print(self.err_list[3])
 
     def do_destroy(self, line):
         """Function to print string representation of instance"""
         arg = line.split()
         if line == "":
-            self.err_msg(1)
+            print(self.err_list[0])
         elif arg[0] not in self.group:
-            self.err_msg(2)
+            print(self.err_list[1])
         elif len(arg) < 2:
-            self.err_msg(3)
+            print(self.err_list[2])
         else:
             data_dump = models.storage.all()
             key = "{}.{}".format(arg[0], arg[1])
@@ -87,7 +90,7 @@ class HBNBCommand(cmd.Cmd):
                 storage._FileStorage__objects = data_dump
                 storage.save()
                 return
-            self.err_msg(4)
+            print(self.err_list[3])
 
     def do_all(self, line=""):
         """Function that displays all class instances of given argument or all
@@ -99,7 +102,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             arg = line.split()
             if arg[0] not in self.group:
-                self.err_msg(2)
+                print(self.err_list[1])
             else:
                 for instance_key, instance_obj in data_dump.items():
                     obj = instance_obj.to_dict()
@@ -116,30 +119,34 @@ class HBNBCommand(cmd.Cmd):
         sep = line.split('.')
         command = ""
         x = 0
-        while sep[1][x] != '(':
-            command += sep[1][x]
-            x += 1
-        y = len(command) + 1
-        arg = ""
-        while sep[1][y] != ')':
-            if sep[1][y] not in symbols:
-                arg += sep[1][y]
-            y += 1
-        if arg == "":
-            new_line = "{}".format(sep[0])
-            func[command](new_line)
-        else:
-            p = arg.split(" ")
-            if len(p) == 5:
-                arg1 = "{} {} {}".format(p[0], p[1], p[2])
-                arg2 = "{} {} {}".format(p[0], p[3], p[4])
-                new_line1 = "{} {}".format(sep[0], arg1)
-                new_line2 = "{} {}".format(sep[0], arg2)
-                func[command](new_line1)
-                func[command](new_line2)
+
+        try:
+            while sep[1][x] != '(':
+                command += sep[1][x]
+                x += 1
+            y = len(command) + 1
+            arg = ""
+            while sep[1][y] != ')':
+                if sep[1][y] not in symbols:
+                    arg += sep[1][y]
+                y += 1
+            if arg == "":
+                new_line = "{}".format(sep[0])
+                func[command](new_line)
             else:
-                new_line3 = "{} {}".format(sep[0], arg)
-                func[command](new_line3)
+                p = arg.split(" ")
+                if len(p) == 5:
+                    arg1 = "{} {} {}".format(p[0], p[1], p[2])
+                    arg2 = "{} {} {}".format(p[0], p[3], p[4])
+                    new_line1 = "{} {}".format(sep[0], arg1)
+                    new_line2 = "{} {}".format(sep[0], arg2)
+                    func[command](new_line1)
+                    func[command](new_line2)
+                else:
+                    new_line3 = "{} {}".format(sep[0], arg)
+                    func[command](new_line3)
+        except Exception:
+            print("Invalid command, please try again")
 
     def do_count(self, arg):
         """Function to return a count of all instances of a given class"""
@@ -167,23 +174,23 @@ class HBNBCommand(cmd.Cmd):
         # arg = line.split()
 
         if not line:
-            self.err_msg(1)
+            print(self.err_msg[0])
         elif arg[0] not in self.group:
-            self.err_msg(2)
+            print(self.err_msg[1])
         elif len(arg) < 2:
-            self.err_msg(3)
+            print(self.err_msg[2])
         else:
             key = "{}.{}".format(arg[0], arg[1])
             if key in data_dump:
                 if len(arg) < 3:
-                    self.err_msg(5)
+                    print(self.err_msg[4])
                 elif len(arg) < 4:
-                    self.err_msg(6)
+                    print(self.err_msg[5])
                 else:
                     obj = data_dump[key]
                     setattr(obj, arg[2], arg[3])
             else:
-                self.err_msg(4)
+                print(self.err_msg[3])
 
     def emptyline(self):
         """Called when an empty line is entered
