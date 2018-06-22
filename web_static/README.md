@@ -16,7 +16,8 @@ File Name | Description
 [0-index.html](./0-index.html) | HTML page that displays a header and a footer.
 [1-index.html](./1-index.html) | HTML page that displays a header and a footer, using head style
 [2-index.html](./2-index.html) | HTML page that displays a header and a footer, using CSS sheets
-[3-index.html](./3-index.html) | HTML page that displats hbnb header and footer, using CSS sheets
+[3-index.html](./3-index.html) | HTML page that displays hbnb header and footer, using CSS sheets
+[4-index.html](./4-index.html) | HTML page that displays hbnb page with search button
 
-### Authors
+### Author
 * Adekunle Adeniran |  [Twitter](https://twitter.com/flourishcodes)
