@@ -17,4 +17,4 @@ File Name | Description
 
 
 ### Authors
-* Adekunle Adeniran | [GitHub](https://github.com/flourishcodes) | [Twitter](https://twitter.com/flourishcodes)
+* Adekunle Adeniran |  [Twitter](https://twitter.com/flourishcodes)
