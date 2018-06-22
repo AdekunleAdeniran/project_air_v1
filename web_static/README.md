@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-0x01. AirBnB clone - Web static
+## 0x01. AirBnB clone - Web static
 ![Image of Holberton B&B Logo](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/263/HBTN-hbnb-Final.png)
 
 ## Holberton School Airbnb Clone - Web Static
@@ -14,7 +13,7 @@ File Name | Description
 
 
 ### Authors
-* Victor Nguyen | [GitHub](https://github.com/vmdn23) | [Twitter](https://twitter.com/victormdnguyen)
+* Adekunle Adeniran | [GitHub](https://github.com/flourishcodes) | [Twitter](https://twitter.com/flourishcodes)
 =======
 ## 0x01. AirBnB clone - Web static
 
@@ -27,4 +26,3 @@ The following projects will incorporate additional sections like database storag
 
 
 ![](https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step1.png)
->>>>>>> 0e95b297f2ca97704b9883d8e06539a544b24158
