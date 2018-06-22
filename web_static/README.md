@@ -18,6 +18,9 @@ File Name | Description
 [2-index.html](./2-index.html) | HTML page that displays a header and a footer, using CSS sheets
 [3-index.html](./3-index.html) | HTML page that displays hbnb header and footer, using CSS sheets
 [4-index.html](./4-index.html) | HTML page that displays hbnb page with search button
+[5-index.html](./5-index.html) | HTML page that displays hbnh page with some properties
+[6-index.html](./6-index.html) | HTML page that displays hbnh page with some properties and its drop down list
+
 
 ### Author
 * Adekunle Adeniran |  [Twitter](https://twitter.com/flourishcodes)
