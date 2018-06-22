@@ -5,14 +5,6 @@
 ### This is the second of a multipart project working towards building a full web application clone of AirBnb. In this progrect we learned how to manipulate HTML and CSS.
 
 
-### Files
-File Name | Description
---- | ---
-0-index.html | HTML page that displays a header and a footer.
-
-## Example Usage
-
-
 ### Authors
 * Adekunle Adeniran | [GitHub](https://github.com/flourishcodes) | [Twitter](https://twitter.com/flourishcodes)
 =======
@@ -25,3 +17,8 @@ The following projects will incorporate additional sections like database storag
 
 
 ![](https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step1.png)
+
+### Files
+File Name | Description
+--- | ---
+0-index.html | HTML page that displays a header and a footer.
