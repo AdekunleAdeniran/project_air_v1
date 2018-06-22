@@ -8,6 +8,7 @@
 ### Files
 File Name | Description
 --- | ---
+0-index.html | HTML page that displays a header and a footer.
 
 ## Example Usage
 
