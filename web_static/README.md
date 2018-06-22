@@ -16,6 +16,7 @@ File Name | Description
 [0-index.html](./0-index.html) | HTML page that displays a header and a footer.
 [1-index.html](./1-index.html) | HTML page that displays a header and a footer, using head style
 [2-index.html](./2-index.html) | HTML page that displays a header and a footer, using CSS sheets
+[3-index.html](./3-index.html) | HTML page that displats hbnb header and footer, using CSS sheets
 
 ### Authors
 * Adekunle Adeniran |  [Twitter](https://twitter.com/flourishcodes)
