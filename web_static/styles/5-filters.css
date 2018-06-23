@@ -31,14 +31,12 @@ section.filters button:hover {
 	width: 25%;
 	border-right: #DDDDDD solid 1px;
 	padding-left: 50px;
-	margin: 12px 0 5px 0;
 }
 
 .amenities {
 	height: 100%;
 	width: 25%;
 	padding-left: 50px;
-	margin: 12px 0 5px 0;
 }
 
 h3 {
