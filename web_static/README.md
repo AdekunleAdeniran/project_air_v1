@@ -20,7 +20,7 @@ File Name | Description
 [4-index.html](./4-index.html) | HTML page that displays hbnb page with search button
 [5-index.html](./5-index.html) | HTML page that displays hbnh page with some properties
 [6-index.html](./6-index.html) | HTML page that displays hbnh page with some properties and its drop down list
-
-
+[7-index.html](./7-index.html) | HTML page that displays hbnh page with some properties and new places
+[8-index.html](./8-index.html) | HTML page that displays hbnh page with some properties and result of search
 ### Author
 * Adekunle Adeniran |  [Twitter](https://twitter.com/flourishcodes)
