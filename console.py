@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is the console for the Holberton HNBN project"""
+"""This is the console for the notrebloh HNBN project"""
 
 
 import cmd

@@ -1,7 +1,7 @@
 # 0x00. AirBnB clone - The console
-![Image of Holberton B&B Logo](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/263/HBTN-hbnb-Final.png)
+![Image of notrebloh B&B Logo](https://s3.amazonaws.com/intranet-projects-files/notreblohschool-higher-level_programming+/263/new-hbnb-Final.png)
 
-## Holberton School Airbnb Clone - Command Interpreter Project Description
+## notrebloh School Airbnb Clone - Command Interpreter Project Description
 ### This is the first of a multipart project working towards building a full web application clone of AirBnb. In this first part, the Python programming language is used to build a command interpreter for the clone's web app. This command interpreter is similar to a BASH shell but it is designed for a specific use case. The following projects will incorporate additional sections like HTML/CSS templating, database storage, API and front-end integration.
 
 ## How to start the interpreter
@@ -72,10 +72,10 @@ Quit command to exit the program
 (hbnb) show User (24ed1cb3-8f8a-4081-878e-60fdce47a42d)
 ** no instance found **
 (hbnb) show User 24ed1cb3-8f8a-4081-878e-60fdce47a42d
-[User] (24ed1cb3-8f8a-4081-878e-60fdce47a42d) {'password': 'root', 'last_name': 'Holberton', 'created_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53126), 'updated_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53158), 'email': 'airbnb@holbertonshool.com', 'id': '24ed1cb3-8f8a-4081-878e-60fdce47a42d', 'first_name': 'Betty'}
+[User] (24ed1cb3-8f8a-4081-878e-60fdce47a42d) {'password': 'root', 'last_name': 'notrebloh', 'created_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53126), 'updated_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53158), 'email': 'airbnb@notreblohshool.com', 'id': '24ed1cb3-8f8a-4081-878e-60fdce47a42d', 'first_name': 'Betty'}
 (hbnb)
 (hbnb) User.show(24ed1cb3-8f8a-4081-878e-60fdce47a42d)
-[User] (24ed1cb3-8f8a-4081-878e-60fdce47a42d) {'password': 'root', 'last_name': 'Holberton', 'created_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53126), 'updated_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53158), 'email': 'airbnb@holbertonshool.com', 'id': '24ed1cb3-8f8a-4081-878e-60fdce47a42d', 'first_name': 'Betty'}
+[User] (24ed1cb3-8f8a-4081-878e-60fdce47a42d) {'password': 'root', 'last_name': 'notrebloh', 'created_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53126), 'updated_at': datetime.datetime(2018, 6, 12, 13, 7, 27, 53158), 'email': 'airbnb@notreblohshool.com', 'id': '24ed1cb3-8f8a-4081-878e-60fdce47a42d', 'first_name': 'Betty'}
 (hbnb)
 (hbnb) User.count()
 12

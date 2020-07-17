@@ -75,12 +75,12 @@ class Test_FileStorage(unittest.TestCase):
         """Tests the new method"""
         temp_storage = FileStorage()
         temp_dict = temp_storage.all()
-        Holberton = User()
-        Holberton.id = 972
-        Holberton.name = "Holberton"
-        temp_storage.new(Holberton)
-        class_name = Holberton.__class__.__name__
-        key = "{}.{}".format(class_name, str(Holberton.id))
+        notrebloh = User()
+        notrebloh.id = 972
+        notrebloh.name = "notrebloh"
+        temp_storage.new(notrebloh)
+        class_name = notrebloh.__class__.__name__
+        key = "{}.{}".format(class_name, str(notrebloh.id))
         self.assertIsNotNone(temp_dict[key])
 
     def test_reload(self):

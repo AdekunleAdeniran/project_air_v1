@@ -1,6 +1,6 @@
-![Image of Holberton B&B Logo](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/263/HBTN-hbnb-Final.png)
+![Image of notrebloh B&B Logo](https://s3.amazonaws.com/intranet-projects-files/notreblohschool-higher-level_programming+/263/new-hbnb-Final.png)
 
-## Holberton School Airbnb Web_static - Building the Front end
+## notrebloh School Airbnb Web_static - Building the Front end
 
 This is the second of a multipart project working towards building a full web application clone of AirBnb. In this part, HTML and CSS will be used to create the front end of the website. 
 The following projects will incorporate additional sections like database storage, API and front-end integration.
